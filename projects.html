@@ -3,81 +3,136 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Projects by Atul R - React, Django, Flask, AI Gemini API, and Machine Learning applications.">
     <title>Projects | Atul R</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Stylesheet -->
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-    <!-- Header -->
+    <!-- Header & Navigation -->
     <header>
         <div class="container">
-            <h1>Atul R</h1>
-            <p>B.Tech Computer Science Student | AI & Full Stack Developer</p>
+            <div class="logo-area">
+                <h1>Atul R</h1>
+                <p>B.Tech Electrical & Computer Engineering Student | AI & Full Stack Developer</p>
+            </div>
 
             <nav>
-                <a href="index.html">Home</a>
-                <a href="about.html">About</a>
-                <a href="projects.html" class="active">Projects</a>
-                <a href="contact.html">Contact</a>
+                <a href="index.html"><i class="fa-solid fa-house"></i> Home</a>
+                <a href="about.html"><i class="fa-solid fa-user"></i> About</a>
+                <a href="projects.html" class="active"><i class="fa-solid fa-code"></i> Projects</a>
+                <a href="contact.html"><i class="fa-solid fa-envelope"></i> Contact</a>
             </nav>
         </div>
     </header>
 
-    <hr>
+    <main>
+        <!-- Projects Section -->
+        <section class="container" style="padding-top: 1rem;">
+            <h2><i class="fa-solid fa-folder-open"></i> Software Projects</h2>
+            <p style="color: var(--text-muted); font-size: 1.05rem; max-width: 700px; margin-bottom: 2rem;">
+                A showcase of full-stack web applications and AI tools I've built using modern web frameworks and intelligent APIs.
+            </p>
 
-    <!-- Projects List -->
-    <section>
-        <h2>My Projects</h2>
-        <p>Here are the key projects I have worked on:</p>
+            <div class="card-grid">
+                <!-- Project 1 -->
+                <article class="card">
+                    <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 0.8rem;">
+                        <h3><i class="fa-solid fa-users-gear"></i> Employee Management System</h3>
+                        <span class="badge-status badge-completed"><i class="fa-solid fa-check"></i> Completed</span>
+                    </div>
+                    <p>
+                        A comprehensive workforce management application built to handle employee records, role allocations, dynamic data filtering, and organizational workflows.
+                    </p>
+                    <div style="margin: 1.2rem 0;">
+                        <strong style="font-size: 0.85rem; color: #ffffff; text-transform: uppercase; letter-spacing: 0.5px;">Key Features:</strong>
+                        <ul style="color: var(--text-muted); font-size: 0.9rem; margin-top: 0.4rem; padding-left: 1.2rem; line-height: 1.6;">
+                            <li>Role-based administrative views & secure data operations</li>
+                            <li>REST API communication between React and Django</li>
+                            <li>Dynamic record searching & structured reporting</li>
+                        </ul>
+                    </div>
+                    <div class="tags">
+                        <span class="tag"><i class="fa-brands fa-react"></i> React</span>
+                        <span class="tag"><i class="fa-solid fa-server"></i> Django</span>
+                        <span class="tag"><i class="fa-brands fa-python"></i> Python</span>
+                        <span class="tag"><i class="fa-solid fa-plug"></i> REST API</span>
+                    </div>
+                </article>
 
-        <article>
-            <h3>1. Employee Management System</h3>
-            <p><strong>Technology Used:</strong> React + Django</p>
-            <p><strong>Status:</strong> Completed</p>
-            <p><strong>Description:</strong> A web-based application designed to manage employee records, track details, and streamline administrative tasks within an organization.</p>
-        </article>
+                <!-- Project 2 -->
+                <article class="card">
+                    <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 0.8rem;">
+                        <h3><i class="fa-solid fa-robot"></i> AI Tender Extractor</h3>
+                        <span class="badge-status badge-completed"><i class="fa-solid fa-check"></i> Completed</span>
+                    </div>
+                    <p>
+                        An intelligent document automation tool powered by Google Gemini API to parse complex PDF tenders and extract contract details, financial deadlines, and compliance requirements.
+                    </p>
+                    <div style="margin: 1.2rem 0;">
+                        <strong style="font-size: 0.85rem; color: #ffffff; text-transform: uppercase; letter-spacing: 0.5px;">Key Features:</strong>
+                        <ul style="color: var(--text-muted); font-size: 0.9rem; margin-top: 0.4rem; padding-left: 1.2rem; line-height: 1.6;">
+                            <li>Automated PDF text extraction & AI prompt processing</li>
+                            <li>Structured JSON output generation for tender metrics</li>
+                            <li>Interactive Flask dashboard for uploading & viewing summaries</li>
+                        </ul>
+                    </div>
+                    <div class="tags">
+                        <span class="tag"><i class="fa-solid fa-flask"></i> Flask</span>
+                        <span class="tag"><i class="fa-solid fa-sparkles"></i> Gemini API</span>
+                        <span class="tag"><i class="fa-brands fa-python"></i> Python</span>
+                        <span class="tag"><i class="fa-solid fa-file-pdf"></i> PDF Processing</span>
+                    </div>
+                </article>
+            </div>
+        </section>
 
-        <br>
-
-        <article>
-            <h3>2. AI Tender Extractor</h3>
-            <p><strong>Technology Used:</strong> Flask + Gemini API</p>
-            <p><strong>Status:</strong> Completed</p>
-            <p><strong>Description:</strong> An intelligent tool that parses PDF tender documents and extracts key contract information automatically using Google Gemini AI.</p>
-        </article>
-    </section>
-
-    <br>
-    <section>
-        <h2>Project Overview Table</h2>
-        <table border="1" cellpadding="10">
-            <tr>
-                <th>Project Name</th>
-                <th>Technology</th>
-                <th>Category</th>
-                <th>Status</th>
-            </tr>
-            <tr>
-                <td>Employee Management System</td>
-                <td>React + Django</td>
-                <td>Web Development</td>
-                <td>Completed</td>
-            </tr>
-            <tr>
-                <td>AI Tender Extractor</td>
-                <td>Flask + Gemini API</td>
-                <td>Artificial Intelligence</td>
-                <td>Completed</td>
-            </tr>
-        </table>
-    </section>
+        <!-- Project Overview Table -->
+        <section class="container">
+            <h2><i class="fa-solid fa-table-list"></i> Project Summary Matrix</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Project Name</th>
+                        <th>Technology Stack</th>
+                        <th>Category</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Employee Management System</strong></td>
+                        <td>React, Django, REST API, Python</td>
+                        <td>Full Stack Web</td>
+                        <td><span class="badge-status badge-completed"><i class="fa-solid fa-check"></i> Completed</span></td>
+                    </tr>
+                    <tr>
+                        <td><strong>AI Tender Extractor</strong></td>
+                        <td>Flask, Gemini API, PyPDF, Python</td>
+                        <td>AI / Document Automation</td>
+                        <td><span class="badge-status badge-completed"><i class="fa-solid fa-check"></i> Completed</span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
 
     <!-- Footer -->
     <footer>
-        <hr>
-        <p style="text-align:center;">
-            &copy; 2026 Atul R. All Rights Reserved.
-        </p>
+        <div class="container footer-content">
+            <p>&copy; 2026 Atul R. All Rights Reserved. | B.Tech Electrical & Computer Engineering</p>
+            <div class="social-links">
+                <a href="https://github.com/yourusername" target="_blank" class="social-icon" title="GitHub"><i class="fa-brands fa-github"></i></a>
+                <a href="https://linkedin.com/in/yourprofile" target="_blank" class="social-icon" title="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+            </div>
+        </div>
     </footer>
 
 </body>

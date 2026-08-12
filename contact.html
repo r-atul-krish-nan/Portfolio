@@ -3,77 +3,129 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact Atul R for software engineering, AI projects, web development, and internship opportunities.">
     <title>Contact | Atul R</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Stylesheet -->
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-    <!-- Header -->
+    <!-- Header & Navigation -->
     <header>
         <div class="container">
-            <h1>Atul R</h1>
-            <p>B.Tech Computer Science Student | AI & Full Stack Developer</p>
+            <div class="logo-area">
+                <h1>Atul R</h1>
+                <p>B.Tech Electrical & Computer Engineering Student | AI & Full Stack Developer</p>
+            </div>
 
             <nav>
-                <a href="index.html">Home</a>
-                <a href="about.html">About</a>
-                <a href="projects.html">Projects</a>
-                <a href="contact.html" class="active">Contact</a>
+                <a href="index.html"><i class="fa-solid fa-house"></i> Home</a>
+                <a href="about.html"><i class="fa-solid fa-user"></i> About</a>
+                <a href="projects.html"><i class="fa-solid fa-code"></i> Projects</a>
+                <a href="contact.html" class="active"><i class="fa-solid fa-envelope"></i> Contact</a>
             </nav>
         </div>
     </header>
 
-    <hr>
+    <main>
+        <section class="container">
+            <h2><i class="fa-solid fa-paper-plane"></i> Get In Touch</h2>
+            <p style="color: var(--text-muted); font-size: 1.05rem; max-width: 650px;">
+                Have a project idea, inquiry, or potential opportunity? Send me a message below or reach out via direct email.
+            </p>
 
-    <!-- Contact Info -->
-    <section>
-        <h2>Contact Information</h2>
-        <p>Feel free to reach out to me for collaboration, project inquiries, or opportunities!</p>
-        
-        <p><strong>Email:</strong> ratulkrishnan2005@gmail.com</p>
-        <p><strong>Phone:</strong> +91 7994658292</p>
+            <div class="contact-grid">
+                <!-- Contact Information Cards -->
+                <div>
+                    <h3 style="color: #ffffff; margin-bottom: 1.25rem; font-size: 1.3rem;">Contact Information</h3>
+                    <div class="contact-info-list">
+                        <div class="contact-info-item">
+                            <div class="contact-icon"><i class="fa-solid fa-envelope"></i></div>
+                            <div class="contact-info-text">
+                                <strong>Direct Email</strong>
+                                <a href="mailto:ratulkrishnan2005@gmail.com">ratulkrishnan2005@gmail.com</a>
+                            </div>
+                        </div>
 
-        <p><strong>Social Links:</strong></p>
-        <ul>
-            <li><a href="https://github.com/yourusername" target="_blank">GitHub</a></li>
-            <li><a href="https://linkedin.com/in/yourprofile" target="_blank">LinkedIn</a></li>
-        </ul>
-    </section>
+                        <div class="contact-info-item">
+                            <div class="contact-icon"><i class="fa-solid fa-phone"></i></div>
+                            <div class="contact-info-text">
+                                <strong>Phone Number</strong>
+                                <span>+91 7994658292</span>
+                            </div>
+                        </div>
 
-    <hr>
+                        <div class="contact-info-item">
+                            <div class="contact-icon"><i class="fa-brands fa-github"></i></div>
+                            <div class="contact-info-text">
+                                <strong>GitHub Profile</strong>
+                                <a href="https://github.com/yourusername" target="_blank">github.com/yourusername</a>
+                            </div>
+                        </div>
 
-    <!-- Contact Form -->
-    <section>
-        <h2>Send Me a Message</h2>
-        <form action="#" method="post">
-            <p>
-                <label for="name">Name:</label><br>
-                <input type="text" id="name" name="name" required>
-            </p>
-            <p>
-                <label for="email">Email:</label><br>
-                <input type="email" id="email" name="email" required>
-            </p>
-            <p>
-                <label for="subject">Subject:</label><br>
-                <input type="text" id="subject" name="subject" required>
-            </p>
-            <p>
-                <label for="message">Message:</label><br>
-                <textarea id="message" name="message" rows="5" cols="40" required></textarea>
-            </p>
-            <p>
-                <button type="submit">Submit</button>
-            </p>
-        </form>
-    </section>
+                        <div class="contact-info-item">
+                            <div class="contact-icon"><i class="fa-brands fa-linkedin-in"></i></div>
+                            <div class="contact-info-text">
+                                <strong>LinkedIn Profile</strong>
+                                <a href="https://linkedin.com/in/yourprofile" target="_blank">linkedin.com/in/yourprofile</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Interactive Contact Form -->
+                <div class="form-card">
+                    <h3 style="color: #ffffff; margin-bottom: 1.25rem; font-size: 1.3rem;">Send a Message</h3>
+                    
+                    <form id="contactForm" onsubmit="event.preventDefault(); document.getElementById('successAlert').style.display='block'; this.reset();">
+                        <div class="form-group">
+                            <label for="name"><i class="fa-regular fa-user"></i> Full Name</label>
+                            <input type="text" id="name" name="name" class="form-control" placeholder="John Doe" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email"><i class="fa-regular fa-envelope"></i> Email Address</label>
+                            <input type="email" id="email" name="email" class="form-control" placeholder="john@example.com" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="subject"><i class="fa-solid fa-tag"></i> Subject</label>
+                            <input type="text" id="subject" name="subject" class="form-control" placeholder="Project Inquiry / Opportunity" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message"><i class="fa-regular fa-comment-dots"></i> Message</label>
+                            <textarea id="message" name="message" class="form-control" placeholder="Type your message here..." required></textarea>
+                        </div>
+
+                        <button type="submit" class="btn" style="width: 100%;">
+                            <i class="fa-solid fa-paper-plane"></i> Send Message
+                        </button>
+                    </form>
+
+                    <div id="successAlert" class="alert-success">
+                        <i class="fa-solid fa-circle-check"></i> Thank you! Your message has been sent successfully.
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 
     <!-- Footer -->
     <footer>
-        <hr>
-        <p style="text-align:center;">
-            &copy; 2026 Atul R. All Rights Reserved.
-        </p>
+        <div class="container footer-content">
+            <p>&copy; 2026 Atul R. All Rights Reserved. | B.Tech Electrical & Computer Engineering</p>
+            <div class="social-links">
+                <a href="https://github.com/yourusername" target="_blank" class="social-icon" title="GitHub"><i class="fa-brands fa-github"></i></a>
+                <a href="https://linkedin.com/in/yourprofile" target="_blank" class="social-icon" title="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+            </div>
+        </div>
     </footer>
 
 </body>

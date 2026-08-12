@@ -3,91 +3,140 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn more about Atul R, B.Tech Electrical & Computer Engineering student, AI developer, and full-stack software engineer.">
     <title>About Me | Atul R</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Stylesheet -->
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-    <!-- Header -->
+    <!-- Header & Navigation -->
     <header>
         <div class="container">
-            <h1>Atul R</h1>
-            <p>B.Tech Computer Science Student | AI & Full Stack Developer</p>
+            <div class="logo-area">
+                <h1>Atul R</h1>
+                <p>B.Tech Electrical & Computer Engineering Student | AI & Full Stack Developer</p>
+            </div>
 
             <nav>
-                <a href="index.html">Home</a>
-                <a href="about.html" class="active">About</a>
-                <a href="projects.html">Projects</a>
-                <a href="contact.html">Contact</a>
+                <a href="index.html"><i class="fa-solid fa-house"></i> Home</a>
+                <a href="about.html" class="active"><i class="fa-solid fa-user"></i> About</a>
+                <a href="projects.html"><i class="fa-solid fa-code"></i> Projects</a>
+                <a href="contact.html"><i class="fa-solid fa-envelope"></i> Contact</a>
             </nav>
         </div>
     </header>
 
-    <hr>
+    <main>
+        <!-- Hero / Biography Section -->
+        <section class="hero container">
+            <div class="hero-avatar-wrapper">
+                <img src="images/profile.jpg" alt="Atul R Profile Picture" width="220">
+            </div>
 
-    <!-- About Section -->
-    <section>
-        <h2>About Me</h2>
-        <img src="images/profile.jpg" alt="Profile Picture" width="180">
-        <p>
-            Hello! I'm <strong>Atul R</strong>, a passionate Electrical and Computer Engineering student with interests in Artificial Intelligence, Machine Learning, Web Development, and Software Engineering.
-        </p>
-        <p>
-            I enjoy building intelligent applications, solving real-world problems, and learning new technologies.
-        </p>
-    </section>
+            <div class="hero-content">
+                <h2>About Me</h2>
+                <p>
+                    Hello! I'm <strong>Atul R</strong>, an Electrical and Computer Engineering student with a deep interest in software engineering, Artificial Intelligence, Machine Learning, and Web Development.
+                </p>
+                <p>
+                    My passion lies at the intersection of AI integration and full-stack web applications—building tools that automate workflow tasks, parse complex data, and deliver seamless user experiences.
+                </p>
+                <div class="hero-cta">
+                    <a href="projects.html" class="btn"><i class="fa-solid fa-rocket"></i> Explore Projects</a>
+                    <a href="contact.html" class="btn btn-secondary"><i class="fa-solid fa-envelope"></i> Contact Me</a>
+                </div>
+            </div>
+        </section>
 
-    <!-- Career Objective -->
-    <section>
-        <h2>Career Objective</h2>
-        <p>
-            To secure a challenging position as a Software Engineer where I can apply my programming, AI, and problem-solving skills while continuously learning and contributing to innovative projects.
-        </p>
-    </section>
+        <!-- Career Vision -->
+        <section class="container">
+            <h2><i class="fa-solid fa-compass"></i> Career Vision</h2>
+            <div class="card">
+                <p style="font-size: 1.05rem; line-height: 1.8;">
+                    To secure a challenging position as a Software Engineer where I can apply my programming, AI, and problem-solving skills while continuously learning and contributing to innovative, scalable web and AI systems.
+                </p>
+            </div>
+        </section>
 
-    <!-- Education -->
-    <section>
-        <h2>Education Details</h2>
-        <ol>
-            <li>
-                <strong>B.Tech in Electrical and Computer Engineering</strong>
-                <p>Focus Areas: Data Structures, Algorithms, Artificial Intelligence, Machine Learning, Web Development.</p>
-            </li>
-            <li>
-                <strong>Higher Secondary Education</strong>
-                <p>Completed with Science and Computer Science specialization.</p>
-            </li>
-            <li>
-                <strong>Secondary School Education</strong>
-                <p>Completed with High Distinction.</p>
-            </li>
-        </ol>
-    </section>
+        <!-- Academic Timeline -->
+        <section class="container">
+            <h2><i class="fa-solid fa-graduation-cap"></i> Academic Journey</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <h3>B.Tech in Electrical and Computer Engineering</h3>
+                    <div class="period"><i class="fa-regular fa-calendar-check"></i> Present (Undergraduate)</div>
+                    <p>Focus Areas: Data Structures, Algorithms, Artificial Intelligence, Machine Learning, Web Technologies, and Embedded Logic.</p>
+                </div>
+                <div class="timeline-item">
+                    <h3>Higher Secondary Education (12th Grade)</h3>
+                    <div class="period"><i class="fa-regular fa-circle-check"></i> Completed</div>
+                    <p>Completed with Science and Computer Science stream specialization.</p>
+                </div>
+                <div class="timeline-item">
+                    <h3>Secondary School Education (10th Grade)</h3>
+                    <div class="period"><i class="fa-regular fa-circle-check"></i> Completed</div>
+                    <p>Completed with academic distinction across core science and mathematics modules.</p>
+                </div>
+            </div>
+        </section>
 
-    <!-- Technical Skills Breakdown -->
-    <section>
-        <h2>Technical Skills Breakdown</h2>
-        <ul>
-            <li><strong>Programming Languages:</strong> Python, Java, C, JavaScript</li>
-            <li><strong>Web Development:</strong> HTML5, CSS3, React, Django, Flask</li>
-            <li><strong>AI & ML:</strong> Machine Learning, Gemini API, Data Analytics</li>
-            <li><strong>Tools & Version Control:</strong> Git, GitHub</li>
-        </ul>
-    </section>
+        <!-- Detailed Technical Breakdown -->
+        <section class="container">
+            <h2><i class="fa-solid fa-layer-group"></i> Technical Skills Matrix</h2>
+            <div class="card-grid">
+                <div class="card">
+                    <h3><i class="fa-solid fa-code"></i> Programming</h3>
+                    <p>Core algorithmic languages for system development and backend logic.</p>
+                    <ul class="skill-tags">
+                        <li><i class="fa-brands fa-python"></i> Python</li>
+                        <li><i class="fa-brands fa-java"></i> Java</li>
+                        <li><i class="fa-solid fa-c"></i> C Language</li>
+                        <li><i class="fa-brands fa-js"></i> JavaScript</li>
+                    </ul>
+                </div>
 
-    <!-- Navigation Link -->
-    <section>
-        <p>
-            Check out my <a href="projects.html">Projects</a> or <a href="contact.html">Contact Me</a> directly!
-        </p>
-    </section>
+                <div class="card">
+                    <h3><i class="fa-solid fa-globe"></i> Web Technologies</h3>
+                    <p>Modern frontend user interface frameworks and robust web backends.</p>
+                    <ul class="skill-tags">
+                        <li><i class="fa-brands fa-html5"></i> HTML5</li>
+                        <li><i class="fa-brands fa-css3-alt"></i> CSS3</li>
+                        <li><i class="fa-brands fa-react"></i> React</li>
+                        <li><i class="fa-solid fa-server"></i> Django</li>
+                        <li><i class="fa-solid fa-flask"></i> Flask</li>
+                    </ul>
+                </div>
+
+                <div class="card">
+                    <h3><i class="fa-solid fa-brain"></i> AI & Intelligent Tools</h3>
+                    <p>Machine learning workflows and generative AI API integrations.</p>
+                    <ul class="skill-tags">
+                        <li><i class="fa-solid fa-robot"></i> Machine Learning</li>
+                        <li><i class="fa-solid fa-sparkles"></i> Gemini API</li>
+                        <li><i class="fa-brands fa-git-alt"></i> Git</li>
+                        <li><i class="fa-brands fa-github"></i> GitHub</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
 
     <!-- Footer -->
     <footer>
-        <hr>
-        <p style="text-align:center;">
-            &copy; 2026 Atul R. All Rights Reserved.
-        </p>
+        <div class="container footer-content">
+            <p>&copy; 2026 Atul R. All Rights Reserved. | B.Tech Electrical & Computer Engineering</p>
+            <div class="social-links">
+                <a href="https://github.com/yourusername" target="_blank" class="social-icon" title="GitHub"><i class="fa-brands fa-github"></i></a>
+                <a href="https://linkedin.com/in/yourprofile" target="_blank" class="social-icon" title="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+            </div>
+        </div>
     </footer>
 
 </body>
