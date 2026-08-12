@@ -1,0 +1,104 @@
+@import url('common.css');
+
+/* Projects Page Grid & Cards */
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 1.75rem;
+    margin-top: 1.5rem;
+}
+
+.card {
+    background: var(--bg-card);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-md);
+    padding: 1.75rem;
+    transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: var(--shadow-card);
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.card:hover {
+    background: var(--bg-card-hover);
+    border-color: var(--border-glow);
+    transform: translateY(-6px);
+    box-shadow: 0 20px 40px -15px rgba(0, 0, 0, 0.6), 0 0 20px rgba(59, 130, 246, 0.15);
+}
+
+.card h3 {
+    font-size: 1.35rem;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 0.6rem;
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+}
+
+.card h3 i {
+    color: var(--accent-blue);
+    font-size: 1.1rem;
+}
+
+.card p {
+    color: var(--text-muted);
+    font-size: 0.98rem;
+    line-height: 1.6;
+}
+
+/* Projects Summary Matrix Table */
+table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    background: var(--bg-card);
+    backdrop-filter: blur(16px);
+    border-radius: var(--radius-md);
+    overflow: hidden;
+    border: 1px solid var(--border-color);
+    margin-top: 1.25rem;
+    box-shadow: var(--shadow-card);
+}
+
+th, td {
+    padding: 1.1rem 1.4rem;
+    text-align: left;
+}
+
+th {
+    background: rgba(255, 255, 255, 0.04);
+    color: #ffffff;
+    font-family: 'Outfit', sans-serif;
+    font-weight: 600;
+    font-size: 0.95rem;
+    border-bottom: 1px solid var(--border-color);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+td {
+    color: var(--text-muted);
+    font-size: 0.95rem;
+    border-bottom: 1px solid var(--border-color);
+}
+
+tr:last-child td {
+    border-bottom: none;
+}
+
+tr:hover td {
+    background: rgba(255, 255, 255, 0.03);
+    color: var(--text-main);
+}
+
+/* Projects Media Queries */
+@media (max-width: 768px) {
+    table {
+        display: block;
+        overflow-x: auto;
+    }
+}

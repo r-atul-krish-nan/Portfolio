@@ -1,0 +1,128 @@
+@import url('common.css');
+
+/* About Page Hero */
+.hero {
+    display: flex;
+    align-items: center;
+    gap: 3.5rem;
+    padding: 4rem 0 3rem 0;
+}
+
+.hero-avatar-wrapper {
+    position: relative;
+    flex-shrink: 0;
+}
+
+.hero-avatar-wrapper::before {
+    content: '';
+    position: absolute;
+    inset: -6px;
+    border-radius: var(--radius-lg);
+    background: var(--primary-gradient);
+    z-index: -1;
+    filter: blur(12px);
+    opacity: 0.7;
+    transition: opacity 0.3s;
+}
+
+.hero-avatar-wrapper:hover::before {
+    opacity: 1;
+}
+
+.hero img {
+    border-radius: var(--radius-lg);
+    border: 2px solid rgba(255, 255, 255, 0.15);
+    object-fit: cover;
+    aspect-ratio: 1 / 1;
+    display: block;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6);
+}
+
+.hero-content h2 {
+    font-size: 2.5rem;
+    font-weight: 800;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+    color: #ffffff;
+}
+
+.hero-content h2::after {
+    display: none;
+}
+
+.hero-content p {
+    color: var(--text-muted);
+    font-size: 1.1rem;
+    margin-bottom: 1.25rem;
+    max-width: 650px;
+    line-height: 1.7;
+}
+
+.hero-content strong {
+    color: #ffffff;
+    font-weight: 600;
+}
+
+.hero-cta {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1.75rem;
+    align-items: center;
+}
+
+/* Timeline Layout for Education */
+.timeline {
+    position: relative;
+    padding-left: 2rem;
+    border-left: 2px solid var(--border-color);
+    margin-top: 1.5rem;
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 2rem;
+}
+
+.timeline-item::before {
+    content: '';
+    position: absolute;
+    left: -2.5rem;
+    top: 0.35rem;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background: var(--primary);
+    box-shadow: 0 0 12px var(--primary);
+    border: 3px solid var(--bg-dark);
+}
+
+.timeline-item h3 {
+    font-size: 1.2rem;
+    color: #ffffff;
+}
+
+.timeline-item .period {
+    font-size: 0.88rem;
+    color: var(--accent-cyan);
+    font-weight: 600;
+    margin: 0.2rem 0 0.5rem 0;
+}
+
+.timeline-item p {
+    color: var(--text-muted);
+    font-size: 0.98rem;
+    line-height: 1.6;
+}
+
+/* About Responsive Media Queries */
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        gap: 2rem;
+    }
+
+    .hero-cta {
+        justify-content: center;
+    }
+}
